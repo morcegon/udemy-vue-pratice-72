@@ -2,15 +2,13 @@
   <div>
     <li
       class="list-group-item">
-      Server #{{ serverInfo.id }}
+      Server #{{ id }}
     </li>
   </div>
 </template>
 
 <script>
   export default {
-    props: {
-      serverInfo: Object
-    }
+    props: ['id']
   }
 </script>

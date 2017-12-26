@@ -1,16 +1,16 @@
 <template>
   <div class="col-xs-12 col-sm-6">
     <ul class="list-group">
-      <server-item
+      <app-server
         v-for="server in servers"
-        :serverInfo='server'
-        :key="server.id"></server-item>
+        :id='server.id'
+        :key="server.id"></app-server>
     </ul>
   </div>
 </template>
 
 <script>
-  import ServerItem from './ServerItem.vue'
+  import Server from './Server.vue'
   export default {
     data: () => {
       return {
@@ -24,7 +24,7 @@
       }
     },
     components: {
-      serverItem: ServerItem
+      appServer: Server
     }
   }
 </script>
